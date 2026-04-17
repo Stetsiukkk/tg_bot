@@ -43,11 +43,9 @@ SPREADSHEET_ID=id_вашої_таблиці
 
 # --- Google Credentials (JSON string) ---
 GOOGLE_CREDENTIALS_JSON='{"type": "service_account", "project_id": "...", ...}'
+```
 
-🚀 Як запустити
-
-    Встановіть залежності: pip install -r requirements.txt
-
-    Налаштуйте файл .env.
-
-    Запустіть бота: python bot.py
+ 🚀 Як запустити      
+ Встановіть залежності: pip install -r requirements.txt      
+ Налаштуйте файл .env.      
+ Запустіть бота: python bot.py
