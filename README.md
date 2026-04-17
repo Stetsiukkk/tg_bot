@@ -27,23 +27,22 @@ SmartHome Pro Assistant — це інтелектуальний Telegram-бот 
 
     Важливо: Весь JSON-вміст сервісного акаунта має бути в одинарних лапках, щоб уникнути помилок через внутрішні подвійні лапки.
 
-Фрагмент коду
+Для роботи бота створіть файл `.env` у кореневій директорії. 
 
+> **Важливо:** Вміст `GOOGLE_CREDENTIALS_JSON` має бути обгорнутий в **одинарні лапки** (`'`), щоб уникнути конфліктів із внутрішніми подвійними лапками JSON-файлу.
+
+```env
 # --- Telegram Bot Settings ---
-# Отримайте у @BotFather
-TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_BOT_TOKEN=ваш_токен_від_botfather
 
 # --- Anthropic AI Settings ---
-# Ключ доступу до Claude API
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
+ANTHROPIC_API_KEY=ваш_ключ_anthropic
 
 # --- Google Sheets Settings ---
-# ID можна скопіювати з посилання на вашу таблицю
-SPREADSHEET_ID=your_google_spreadsheet_id_here
+SPREADSHEET_ID=id_вашої_таблиці
 
 # --- Google Credentials (JSON string) ---
-# Весь вміст файлу сервісного акаунта (.json) в один рядок
-GOOGLE_CREDENTIALS_JSON='{"type": "service_account", "project_id": "...", "private_key": "..."}'
+GOOGLE_CREDENTIALS_JSON='{"type": "service_account", "project_id": "...", ...}'
 
 🚀 Як запустити
 
