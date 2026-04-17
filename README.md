@@ -20,3 +20,26 @@ SmartHome Pro Assistant — це інтелектуальний Telegram-бот 
     Input Sanitization: Очищення вводу користувача від HTML-тегів та спроб Prompt Injection.
 
     Context Management: Автоматичне очищення та обмеження історії діалогу для стабільної роботи AI.
+
+
+🛠 Налаштування змінних оточення
+
+Для роботи бота необхідно створити файл .env у кореневій папці проєкту та заповнити його за наступним шаблоном:
+Plaintext
+
+# --- Telegram Bot Settings ---
+# Токен вашого бота від @BotFather
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+
+# --- Anthropic AI Settings ---
+# Ваш API ключ від Anthropic (Claude)
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# --- Google Sheets Settings ---
+# ID вашої Google таблиці (можна взяти з URL таблиці)
+SPREADSHEET_ID=your_google_spreadsheet_id_here
+
+# --- Google Credentials (JSON string) ---
+# Весь вміст файлу сервісного акаунта (.json) в один рядок.
+# ВАЖЛИВО: Обов'язково використовуйте ОДИНАРНІ лапки навколо JSON-рядка.
+GOOGLE_CREDENTIALS_JSON='{"type": "service_account", "project_id": "...", ...}'
