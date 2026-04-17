@@ -1,0 +1,6 @@
+aiogram
+anthropic
+python-dotenv
+gspread-asyncio
+google-auth
+tenacity
